@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 Route::get('/contactus', 'ContactusController@index')->name('contactus');
 Route::post('/contactusSave', 'ContactusController@store')->name('contactusSave');
+Route::get('/aboutus', 'AboutusController@index')->name('aboutus');
+
 
 Auth::routes();
 
